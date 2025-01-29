@@ -9,7 +9,7 @@ export const Hero1 = () => {
       <Carousel.Item className='Hero1Container'>
         <img
           className="imgHero1"
-          src='https://res.cloudinary.com/do36rxfoe/image/upload/v1738175550/jsywa1h0ar1x39gew9zh.jpg'
+          src='https://res.cloudinary.com/do36rxfoe/image/upload/v1738179175/qfrvfxa9xjys5qskbzrh.jpg'
           alt="First-slide"
         />
         

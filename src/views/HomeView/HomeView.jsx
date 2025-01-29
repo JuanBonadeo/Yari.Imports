@@ -10,7 +10,7 @@ export const HomeView = () => {
             <Categorias/>
             {/* <Hero3/> */}
             {/* <Marcas/> */}
-            <Ofertas/>
+            {/* <Ofertas/> */}
             {/* <Hero2/> */}
             <ProductsContainer/>
 
