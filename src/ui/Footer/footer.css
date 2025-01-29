@@ -13,8 +13,8 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid 1.5px #8c0ced;
-    border-top: solid 1.5px #8c0ced;
+    border-bottom: solid 1.5px #000;
+    border-top: solid 1.5px #000;
     
 }.footer1 div {
     display: flex;
@@ -22,7 +22,7 @@ footer{
     gap: 4em;
     color: #222;
 }.footer1 div a{
-    color: #8c0ced;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
     user-select: none;
@@ -66,7 +66,7 @@ footer h5{
 @media (max-width: 1200px ){
     .footer1{
         height: 17em;
-        border-top: solid 1.5px #8c0ced;
+        border-top: solid 1.5px #000;
         padding-bottom: 1em;
 
         

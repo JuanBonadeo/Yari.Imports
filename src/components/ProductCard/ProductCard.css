@@ -57,7 +57,7 @@
 }
 .price2{
     text-decoration: line-through;
-    color: #8c0ced;
+    color: #000;
 }
 .discountBadge{
     position: absolute;

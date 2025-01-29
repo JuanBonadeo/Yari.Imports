@@ -2,7 +2,7 @@
 .navBar{
     background-color:linen;
     margin: 0;
-    border-bottom: solid 1px #8c0ced;
+    border-bottom: solid 1px #000;
 }
 .mobileContainerNav .title{
     font-size: 1.6em;
@@ -20,13 +20,13 @@
 }
 .desactive{
     text-decoration: none;
-    color: #8c0ced;
+    color: #000;
     font-size: 1.2em;
 }.navLinks a:hover{
     scale: 1.1;
     transition: .3s;
     border: none;
-    color: #8c0ced
+    color: #000
 }.sape{
     border: none;
 
