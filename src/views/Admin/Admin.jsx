@@ -163,6 +163,7 @@ export const Admin = () => {
                 <div>
                     <h3>Sabores</h3><hr />
                     {sabores.map((sabor, index) => (
+                        <>
                         <div key={index} className="info-1">
                             <div className="form-group">
                                 <label>Nombre Sabor:</label>
@@ -189,10 +190,11 @@ export const Admin = () => {
                             </div>
                             <button className="Button" onClick={() => removeSaborField(index)}>
                                 Eliminar
-                            </button><hr />
-                        </div>
+                            </button>
+                            
+                        </div><hr /></>
                     ))}
-                    <button className="Button" onClick={addSaborField}>Añadir Sabor</button>
+                    <button className="Button" onClick={addSaborField}> +Sabor</button>
                 </div>
 
                 <button className="Button" type="submit">
