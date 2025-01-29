@@ -19,7 +19,7 @@
     height: 15em;
     width: 15em;
     filter: brightness(0.9);
-    border-radius: 40px
+    border-radius: 20%
 }
 
 @media screen and (max-width: 1200px){
