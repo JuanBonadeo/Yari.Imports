@@ -1,6 +1,14 @@
 .logo {
     height: 70px;
-    padding: 0;
-    will-change: filter;
-    border-radius: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1em;
+}
+.logo h1{
+    font-family: 'Livvic', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    color: #8c0ced; 
 }

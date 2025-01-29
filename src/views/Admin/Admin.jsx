@@ -153,7 +153,9 @@ export const Admin = () => {
                     <div className="form-group">
                         <label htmlFor="marca">Marca:</label>
                         <select name="marca" id="marca" required value={marca} onChange={handleMarca}>
-                            <option value="hombre">Hombre</option> // todo
+                            <option value="ignite">Ignite</option> 
+                            <option value="elfbar">Elfbar</option> 
+                            <option value="lostmary">Lost Mary</option> 
                         </select>
                     </div>
 

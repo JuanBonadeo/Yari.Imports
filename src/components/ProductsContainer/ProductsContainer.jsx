@@ -24,7 +24,7 @@ export const ProductsContainer = () => {
     setLoading(true)
     try {
       let productsRef = categoriaId
-        ? query(collection(db, 'products'), where('categoria', '==', categoriaId))
+        ? query(collection(db, 'products'), where('marca', '==', categoriaId))
         : collection(db, 'products');
 
       const snapShot = await getDocs(productsRef);
@@ -59,7 +59,7 @@ export const ProductsContainer = () => {
     return (
       <>
         <motion.div className='h1Order h1OrderCategory' initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 2, type: "spring", stiffness: 160, damping: 20 }}>
-          <h1>Vapos {categoriaId}</h1>
+          <h1>Vapes {categoriaId.toLocaleUpperCase()}</h1>
           <OrderList handleOrderChange={handleOrderChange} />
         </motion.div>
         <ProductList products={products} orderBy={orderBy} />
@@ -69,7 +69,7 @@ export const ProductsContainer = () => {
   return (
     <>
       <motion.div className='h1Order' initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 2, type: "spring", stiffness: 160, damping: 20 }}>
-        <h1>Nuestros Perfumes</h1>
+        <h1>Nuestros Vapes</h1>
         <OrderList handleOrderChange={handleOrderChange} />
       </motion.div>
       <ProductList products={products} orderBy={orderBy} />

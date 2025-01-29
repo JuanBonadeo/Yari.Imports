@@ -2,12 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fontsource/merriweather';
+import '@fontsource/source-serif-pro';
+import '@fontsource/livvic';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'merriweather',
+    fontFamily: 'source-serif-pro',
   },
   palette: {
     primary: {

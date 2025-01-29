@@ -28,9 +28,9 @@ export const  NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navLinks" onSelect={closeNavbar}>
             <NavLink to="/" className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} onClick={closeNavbar}>Inicio</NavLink>
-            <NavLink to='/categoria/hombre' className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} >Hombre</NavLink>
-            <NavLink to="/categoria/mujer" className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} onClick={closeNavbar}>Mujer</NavLink>
-            <NavLink to="/categoria/unisex" className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} onClick={closeNavbar}>Unisex</NavLink>
+            <NavLink to='categoria/ignite' className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} >Ignite</NavLink>
+            <NavLink to="categoria/elfbar" className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} onClick={closeNavbar}>Elfbar</NavLink>
+            <NavLink to="categoria/lostmary" className={({ isActive }) => `primary ${isActive ? 'isActive' : "desactive"}`} onClick={closeNavbar}>Lost Mary</NavLink>
     
           </Nav>
         </Navbar.Collapse>

@@ -17,10 +17,13 @@
     filter: brightness(.9);
      background-color: #dadada70; /* Color que deseas aplicar */
     background-blend-mode: multiply;
+    border-radius: 10px;
+
 }
 
 .img{
     transition: all .4s ease-in-out;
+    border-radius: 10px;
 }.img:hover{
     scale: 1.005;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.655);
