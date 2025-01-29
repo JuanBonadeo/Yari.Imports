@@ -1,0 +1,189 @@
+.productInfoContainer{
+    height: 100vh;
+    width: 80%;
+    margin: 1em  auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2em;
+    margin-top: 2em;
+    border-bottom: 1px solid #222;
+    padding: 2em 0;
+}
+.productInfoContainer h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: .5em;
+    text-align: center;
+    color: #8c0ced;
+}
+.productInfoContainer h5{
+    font-size: 1.3em;
+}
+
+.productInfoContainer .infoImg{
+    object-fit: cover;
+    object-position: center;
+    max-height: 90vh;
+    background-color: #aeaeae70; /* Color que deseas aplicar */
+    background-blend-mode: multiply;
+    
+}
+.productInfoContainer .information{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.productInfoContainer .information p{
+    font-size: .9em
+}
+
+.envios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: .5em;
+}
+.infoPayment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+}
+.infoPayment .paymentMethods{
+    display: flex;
+    gap: 1.7em;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+
+}.infoPayment svg:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.information svg{
+    gap: 1em;
+    margin-bottom: .3em;
+}
+.paymentItem{
+    font-size: .7em;
+    display: flex;
+    gap: .2em;
+    align-items: center;    
+}.paymentItem span{
+    margin-bottom: .4em;
+}
+.priceInfo{
+    font-size: 1em;
+}
+.discountedPrice{
+    color: #8c0ced;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.prices{
+    display: inline;
+    gap: .5em;
+}
+.discountBadge{
+    position: absolute;
+    background-color: #222;
+    color: linen;
+    padding: .3em;
+    font-size: 1.1em;
+    font-weight: 700;
+    z-index: 22;
+}
+.productInfoContainer button{
+    margin-bottom: .5em;
+}
+
+.carousel-control-next {
+    background-color: #000;
+}
+.sizeSelector{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+    display: flex;
+    background-color: #8c0ced;
+    color: #212121;
+    box-shadow: none;
+    border-radius: .5em;
+    padding: .5em;
+  }
+
+  
+  .select select {
+    background-color: transparent; 
+    border: 1px solid #ff0000; 
+    padding: 0.25rem; 
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ 
+  .select option {
+    background-color: #e4e4e4; 
+    border: 1px solid #212121; 
+    color: #212121;  
+    cursor: pointer;
+    border-radius: 0;
+  }  .select option:hover{
+    background-color: #a9a9a9; 
+    cursor: pointer;
+  }
+  
+@media (max-width: 1200px){
+    .productInfoContainer{
+        width: 95%;
+        gap: .5emem;
+    }
+    .productInfoContainer .infoImg{
+        max-height: 70vh;
+    }
+    .carouselContainer{
+        max-height: 70vh;
+    }
+    .productInfoContainer .information{
+        gap: .5em;
+        justify-content: flex-start;
+    }
+    .productInfoContainer .information p{
+        font-size: .8em
+    }
+    .priceAddto{
+        flex-direction: column;
+        gap: .5em;
+    }
+    .productInfoContainer h5{
+        font-size: .9em;
+    }
+}
+@media (max-width: 868px){
+    .productInfoContainer{
+        width: 80%;
+        flex-direction: column-reverse;
+        gap: 2em;
+        height: auto;
+        border-bottom: none;
+    }
+    .productInfoContainer .infoImg{
+        width: 100%;
+    }
+    .infoPayment{
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }.paymentItem{
+        font-size: .5em;
+    }
+    
+}

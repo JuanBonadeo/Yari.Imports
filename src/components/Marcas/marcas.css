@@ -1,0 +1,68 @@
+.sliderContainerMarcas {
+    padding: 1em 0;
+    background-color: linen;
+    text-align: center;
+    color: #8c0ced;
+    width: 60%;
+    margin: 0 auto;
+    
+  }
+  
+  .slidesMarcas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-left: 8%;
+  }
+  
+  .marcaCard {
+    text-align: center;
+    padding: 10px;
+    
+  }
+  .marcaCard:focus-visible {
+    outline: none;
+  }
+  
+  .marcaLogo {
+    width: 10em;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s;
+  }
+  .marcaLogo:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+
+  .sliderContainerMarcas h2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  @media  screen and (max-width: 948px) {
+    .sliderContainerMarcas {
+      
+      width: 70%;
+    }
+    .marcaLogo {
+      width: 8em
+    }
+    .slidesMarcas{
+      padding-left: 4%;
+    }
+    
+  }
+    @media  screen and (max-width: 680px) {
+      .marcaLogo {
+        width: 6em
+      }
+      .sliderContainerMarcas {
+        width: 90%;
+      }
+      .slidesMarcas{
+        padding-left: 0;
+      }
+    
+  }

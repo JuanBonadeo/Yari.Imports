@@ -1,0 +1,35 @@
+.addtoCart{
+    width: auto;
+    height: 30px;
+    white-space: nowrap;
+    background-color: #8c0ced; 
+    border: none;
+    font-size: .8em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+    
+    }
+.addtoCart:hover{ 
+    background-color: #8c0ced;;
+    scale: 1.1;
+    transition: 0.3s; 
+   }
+@media (max-width: 700px ){
+    .addtoCart{
+        font-size: 1em;
+        height: auto;
+        width: 130px;
+        }
+
+   }
+
+@media screen and (max-width: 568px) {
+    .addtoCart{
+        font-size: .7em;
+        height: auto;
+        width: 140px;
+        }
+    }
+    
