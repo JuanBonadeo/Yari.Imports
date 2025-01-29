@@ -13,7 +13,7 @@ export const Footer = () => {
             <div className='footer1'>
                 
                 <div className='footerLinks'>
-                    <Link to="https://wa.me/5493416845002"className="dark" label="Atencion al Cliente">Atencion al Cliente</Link>
+                    <Link to="https://wa.me/5493413468551"className="dark" label="Atencion al Cliente">Atencion al Cliente</Link>
                     <Link  to="/clientes" className="dark"label="Preguntas Frecuentes">Compras de clientes</Link>
                     <Link to="terminosycondiciones" className="dark" label="Terminos & Condiciones">Terminos & Condiciones</Link>
                     <Link to="/quienesSomos" className="dark" label="Quienes Somos">Sobre Nosotros</Link>
@@ -21,12 +21,12 @@ export const Footer = () => {
                 <Logo className='logo light' />
             </div>
             <div className='footer2'>
-                <a href='https://www.instagram.com/oudrosario_parfam/'><InstagramIcon/></a>
+                <a href='https://www.instagram.com/yari.imports/'><InstagramIcon/></a>
                 <a><FacebookIcon/></a>
                 <a href='https://github.com/JuanBonadeo'><GitHubIcon/></a>
                 <a><LinkedInIcon/></a>
             </div>
-            <h5>© OudRosario   Copyright  todos los derechos reservados</h5>
+            <h5>© Yari.Imports   Copyright  todos los derechos reservados</h5>
             <h5>Develop by:   &nbsp; <a> JuanBonadeo</a></h5>
 
             

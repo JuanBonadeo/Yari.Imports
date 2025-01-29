@@ -70,7 +70,7 @@ export const FinishPurchase = () => {
                  mensajePedido += `\nTotal: *${formatearMoneda(totalFinal) }*`;
 
                 // Completar con el número de WhatsApp
-                const numeroWhatsApp = '5493416845002';
+                const numeroWhatsApp = '5493413468551';
 
                 function esDispositivoMovil() {
                     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
