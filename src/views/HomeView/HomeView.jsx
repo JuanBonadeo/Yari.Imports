@@ -7,9 +7,9 @@ export const HomeView = () => {
     return (
         <>
             <Hero1/>
-            {/* <Categorias/> */}
+            <Categorias/>
             {/* <Hero3/> */}
-            <Marcas/>
+            {/* <Marcas/> */}
             <Ofertas/>
             {/* <Hero2/> */}
             <ProductsContainer/>
