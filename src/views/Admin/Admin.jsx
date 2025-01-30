@@ -70,9 +70,9 @@ export const Admin = () => {
                 sabores.map(async (sabor) => {
                     if (sabor.imagen) {
                         const imagenUrl = await uploadToCloudinary(sabor.imagen, marca, nombreProducto);
-                        return { ...sabor, imagen: imagenUrl, preview: undefined }; 
+                        return { ...sabor, imagen: imagenUrl, preview: '' }; 
                     }
-                    return { ...sabor, preview: undefined }; 
+                    return { ...sabor, preview: '' }; 
                 })
             );
     
