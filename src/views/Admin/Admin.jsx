@@ -14,8 +14,7 @@ export const Admin = () => {
         {
             sabor: '',
             stock: true,
-            imagen: null,
-            preview: null
+            imagen: null
         }]);
     const [conTamanios, setConTamanios] = useState(false);
 
