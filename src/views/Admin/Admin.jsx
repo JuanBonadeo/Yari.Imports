@@ -35,7 +35,7 @@ export const Admin = () => {
     };
 
     const addSaborField = () => {
-        setSabores([...sabores, { sabor: '', stock: true }]);
+        setSabores([...sabores, { sabor: '', stock: true, imagen: null}]);
     };
 
     const removeSaborField = (index) => {
@@ -64,18 +64,18 @@ export const Admin = () => {
             const destacados = document.getElementById('destacados').checked;
             const descripcion = document.getElementById('descripcion').value;
             const nombreProducto = nombre.toUpperCase().replace(/\s+/g, '-');
-
+    
             // Subir imágenes de cada sabor a Cloudinary
             const saboresConImagenes = await Promise.all(
                 sabores.map(async (sabor) => {
                     if (sabor.imagen) {
                         const imagenUrl = await uploadToCloudinary(sabor.imagen, marca, nombreProducto);
-                        return { ...sabor, imagen: imagenUrl };
+                        return { ...sabor, imagen: imagenUrl, preview: undefined }; 
                     }
-                    return sabor;
+                    return { ...sabor, preview: undefined }; 
                 })
             );
-
+    
             const nuevoProducto = {
                 nombre,
                 precio,
@@ -85,9 +85,10 @@ export const Admin = () => {
                 marca,
                 sabores: saboresConImagenes,
             };
-
+    
+            console.log(nuevoProducto); // Depura el objeto antes de guardar
             await setDoc(doc(db, 'products', nombreProducto), nuevoProducto);
-
+    
             Swal.fire({
                 icon: 'success',
                 title: 'Producto agregado',
