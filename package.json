@@ -23,6 +23,7 @@
     "@mui/material": "^5.15.11",
     "@sweetalert2/theme-dark": "^5.0.16",
     "bootstrap": "^5.3.3",
+    "browser-image-compression": "^2.0.2",
     "dotenv": "^16.4.5",
     "firebase": "^10.10.0",
     "framer-motion": "^11.0.24",

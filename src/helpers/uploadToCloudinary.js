@@ -1,4 +1,17 @@
+import imageCompression from 'browser-image-compression';
+
+const compressImage = async (file) => {
+    const options = {
+        maxSizeMB: 1, // Tamaño máximo en MB
+        maxWidthOrHeight: 1024, // Redimensionar la imagen si es necesario
+        useWebWorker: true,
+    };
+    return await imageCompression(file, options);
+};
+
 export const uploadToCloudinary = async (file, category, productName) => {
+    const compressedFile = await compressImage(file);
+    
     const formData = new FormData();
     formData.append('file', file);
     formData.append('upload_preset', 'yarisImport');
