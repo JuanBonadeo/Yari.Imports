@@ -8,7 +8,7 @@ import { uploadToCloudinary } from '../../helpers/uploadToCloudinary';
 
 export const Admin = () => {
 
-    const [marca, setMarca] = useState('todo');
+    const [marca, setMarca] = useState('ignite');
     const [nombre, setNombre] = useState('');
     const [sabores, setSabores] = useState([
         {

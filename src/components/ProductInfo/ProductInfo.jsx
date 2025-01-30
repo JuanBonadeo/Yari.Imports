@@ -80,8 +80,10 @@ export const ProductInfo = ({ id, nombre, precio, img1, img2, img3, descripcion,
 
           <p>{descripcion}</p>
 
-
-          <AddToCartIcon onAdd={handleOnAdd} />
+          { stock && 
+            <AddToCartIcon onAdd={handleOnAdd} />
+          }
+          
           <h5>marca: {marca.charAt(0).toUpperCase() + marca.slice(1)}</h5>
           <div className="envios"><h5>Envios por Rosario y Funes </h5><LocalShippingIcon /></div>
         </motion.div>
